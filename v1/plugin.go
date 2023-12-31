@@ -7,5 +7,5 @@ import (
 type Plugin interface {
 	New(core core.Core)
 	Info() core.Manifest
-	Process(value interface{})
+	Process(value interface{}) interface{}
 }
